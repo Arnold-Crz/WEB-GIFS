@@ -5,6 +5,7 @@ html{
   max-width: 1440px;
   min-height: 100vh;
   scroll-behavior: smooth;
+  background-color: #282c34;
 }
 
 *,
@@ -14,7 +15,8 @@ html{
 }
 body{
   margin: 0;
-  background-color: #F2F6F7;
+  
+  min-height: 100vh;
 }
 
 a{

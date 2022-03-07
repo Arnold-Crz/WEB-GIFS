@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Gifs from './Gifs';
 import getGifs from './../services/getGifs';
+import './ListGifs.css';
 
 const ListGifs = ({ params }) => {
   const { keyword } = params;
@@ -15,11 +16,11 @@ const ListGifs = ({ params }) => {
 
   if (loading) return <h2>Cargando</h2>;
   return (
-    <>
+    <div className="cards">
       {gifs.map(({ id, title, url }) => (
         <Gifs key={id} id={id} title={title} url={url} />
       ))}
-    </>
+    </div>
   );
 };
 
